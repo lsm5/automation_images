@@ -226,7 +226,6 @@ DOWNLOAD_PACKAGES=(\
 msg "Installing general build/test dependencies"
 bigto $SUDO dnf install -y "${INSTALL_PACKAGES[@]}"
 
-timebomb 20260520 "crun 1.27.1 should be stable by now"
 arch=$(uname -m)
 n=crun
 v=1.27.1
